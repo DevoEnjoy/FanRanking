@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitch Viewer Scoreboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 600px;
+            background-image: url('https://cafeptthumb-phinf.pstatic.net/MjAyNDA1MjRfMTA5/MDAxNzE2NDgzODgxODQ4.jP6DVOmmr23kdm86qSwRTAP3IPPP_KkLEeavmn1HMk4g.XrPtk1k2geMiCRljguDvXV_3F7fr29ie7TcXLK0psgcg.PNG/KakaoTalk_20240524_020306958.png?type=w800');
+            background-size: cover; /* 배경 이미지가 요소를 완전히 덮도록 조정 */
+            background-position: center; /* 배경 이미지가 요소의 중앙에 위치 */
+            background-repeat: no-repeat; /* 배경 이미지 반복 안 함 */
+        }
+        .box {
+            width: 50%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.7); /* 백그라운드 이미지를 통해 텍스트를 가독성 있게 만들기 위한 반투명 배경 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>KWONLUNA RANK</h1>
+            <div class="user-info">
+                <img src="user-profile.jpg" alt="Profile Picture">
+                <div>
+                    <h2>권루나_핏빛장미</h2>
+                    <span>kwonluna</span>
+                </div>
+            </div>
+        </header>
+        <!--         
+        <aside>
+            <h3>FOLLOWED CHANNELS</h3>
+            <ul>
+                <li>강한나</li>
+                <li>싱나</li>
+                <li>우주선</li>
+            </ul>
+        </aside>
+        -->
+        <main>
+            <section class="rank-info">
+                <h2>2023.4.3 - 4.9</h2>
+                <div class="rank">
+                    <img src="rank-image.png" alt="Rank Image">
+                    <p>4위 44.1% 시청자 입니다.</p>
+                </div>
+                <div class="share-button">
+                    <button>공유하기</button>
+                </div>
+            </section>
+            <div class="container is-flex" style="width: 600px; background-image: url('https://cafeptthumb-phinf.pstatic.net/MjAyNDA1MjRfMTA5/MDAxNzE2NDgzODgxODQ4.jP6DVOmmr23kdm86qSwRTAP3IPPP_KkLEeavmn1HMk4g.XrPtk1k2geMiCRljguDvXV_3F7fr29ie7TcXLK0psgcg.PNG/KakaoTalk_20240524_020306958.png?type=w800');">
+                <section class="details">
+                    <div class="columns is-half is-flex">
+                        <div class="detail-box column is-half">
+                            <div class="box">치즈 후원 데이터가 없습니다.</div>
+                        </div>
+
+                        <div class="detail-box column is-half">
+                            <div class="box">
+                                <h3>채팅</h3>
+                                <p>4.65%</p>
+                                <p>카트는 내 손 끝 각도다. 항상 카트도를 꺾이지 않고 진단해야 한다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns is-half is-flex">
+                        <div class="detail-box column is-half">
+                            <div class="box">
+                                <h3>시청시간</h3>
+                                <p>A 0.00%</p>
+                                <p>영혼은 공부처럼 안 한다더라.</p>
+                            </div>
+                        </div>
+                        <div class="detail-box column is-half">
+                            <div class="box">
+                                네이버카페 활동 데이터가 없습니다.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="chart">
+                <h3>나의 주간 랭킹 변동</h3>
+                <canvas id="rankingChart"></canvas>
+            </section>
+            <section class="badges">
+                <h3>획득한 배지</h3>
+                <p>응원성 2023년 3월</p>
+                <p>학자지원 2023년 4월</p>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
